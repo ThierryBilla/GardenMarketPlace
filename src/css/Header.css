@@ -18,7 +18,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 55px; /* Ajustez la marge supérieure selon vos besoins */
+    margin-top: 25px; /* Ajustez la marge supérieure selon vos besoins */
+}
+
+img{
+    max-width: 40%;
 }
   
 .middle-section {

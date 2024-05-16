@@ -7,11 +7,11 @@ function Header() {
     return (
       <header className="header">
         <div className="top-section">
-          <h1>LOGO</h1>
+        <img src={'./src/assets/images/logo-garden.png'} alt="Logo" />
         </div>
         <div className="middle-section">
           <div className="search-bar">
-            <input type="text" placeholder="Recherche..." className="search-input" />
+            <input type="text" placeholder="Search..." className="search-input" />
           </div>
         </div>
         <div className="bottom-section">
