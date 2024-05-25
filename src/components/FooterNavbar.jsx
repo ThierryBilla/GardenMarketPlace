@@ -2,31 +2,30 @@
 
 import React from 'react';
 import '../css/FooterNavbar.css';
-import { IoMdHome, } from "react-icons/io";
+import { IoMdHome } from "react-icons/io";
 import { AiFillAppstore } from "react-icons/ai";
 import { FaCalendarAlt } from "react-icons/fa";
 import { IoChatbubbles } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
-
-
+import { Link } from 'react-router-dom';
 
 function FooterNavbar() {
   return (
     <footer className="footer-navbar">
       <div className="icon home-icon">
-      <IoMdHome />
+        <Link to="/"><IoMdHome /></Link>
       </div>
       <div className="icon product-icon">
-      <AiFillAppstore />
+        <Link to="/products"><AiFillAppstore /></Link>
       </div>
       <div className="icon calendar-icon">
-      <FaCalendarAlt />
+        <Link to="/calendar"><FaCalendarAlt /></Link>
       </div>
       <div className="icon chat-icon">
-      <IoChatbubbles />
+        <Link to="/mailbox"><IoChatbubbles /></Link>
       </div>
       <div className="icon user-icon">
-      <FaUser />
+        <Link to="/profile"><FaUser /></Link>
       </div>
     </footer>
   );

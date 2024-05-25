@@ -1,0 +1,43 @@
+/* Mailbox.css */
+
+.mailbox {
+    padding: 20px;
+  }
+  
+  .mailbox h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .tabs button {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tabs button.active {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .tabs button svg {
+    margin-right: 8px;
+  }
+  
+  .tab-content {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
