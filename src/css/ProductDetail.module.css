@@ -1,0 +1,135 @@
+.productDetailContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #E2EBC5;
+  }
+  
+  .productImageContainer {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .productImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .likeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+  
+  .likeButton.clicked {
+    background-color: red;
+  }
+  
+  .userProfile {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #ccc;
+  }
+  
+  .userInfo {
+    flex: 1;
+  }
+  
+  .username {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .sellerRating {
+    color: #ffcc00;
+  }
+  
+  .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .productInfo {
+    margin-top: 20px;
+  }
+  
+  .productTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .productDescription {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #000000;
+  }
+  
+  .productActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 95px; /* Ajustement de la marge supérieure */
+  }
+  
+  
+  .offerButton,
+  .buyButton {
+    flex: 1; /* Les boutons prennent tout l'espace disponible */
+    margin-right: 10px; /* Espacement entre les boutons */
+    padding: 15px 0; /* Ajustement de la taille des boutons */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .offerButton {
+    background-color: #6c9a76;
+    color: #fff;
+  }
+  
+  .buyButton {
+    background-color: #6c9a76;
+    color: #fff;
+  }
+  
+  .offerButton:hover {
+    background-color: #54785c; /* Assombrissement au survol */
+  }
+  
+  .buyButton:hover {
+    background-color: #54785c; /* Assombrissement au survol */
+  }
+  

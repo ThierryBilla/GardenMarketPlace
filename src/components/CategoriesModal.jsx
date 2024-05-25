@@ -1,9 +1,10 @@
-// CategoriesModal.jsx
-
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from '../css/CategoriesModal.module.css';
 
 function CategoriesModal({ show, onClose }) {
+  const navigate = useNavigate();
+
   if (!show) {
     return null;
   }
@@ -15,6 +16,11 @@ function CategoriesModal({ show, onClose }) {
     'Catégorie 13', 'Catégorie 14', 'Catégorie 15', 'Catégorie 16'
   ];
 
+  const handleCategoryClick = (category) => {
+    navigate(`/category/${category}`);
+    onClose();
+  };
+
   return (
     <div className={styles.modalOverlay}>
       <div className={styles.modalContent}>
@@ -22,7 +28,11 @@ function CategoriesModal({ show, onClose }) {
         <h2>Toutes les Catégories</h2>
         <div className={styles.categoriesGrid}>
           {categories.map((category, index) => (
-            <div key={index} className={styles.categoryItem}>
+            <div
+              key={index}
+              className={styles.categoryItem}
+              onClick={() => handleCategoryClick(category)}
+            >
               <div className={styles.placeholder}></div>
               <h3>{category}</h3>
             </div>

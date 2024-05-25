@@ -1,4 +1,4 @@
-/* Header.css */
+/* Header.module.css */
 
 .header {
     height: 40vh;
@@ -11,29 +11,29 @@
     align-items: center;
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-  }
+}
   
-  .top-section {
+.top-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 25px; /* Ajustez la marge supérieure selon vos besoins */
-  }
+}
   
-  img {
+.logo {
     max-width: 40%;
-  }
+}
   
-  .middle-section {
+.middle-section {
     flex: 1; /* Utiliser l'espace disponible */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centrer verticalement */
     align-items: center; /* Centrer horizontalement */
-  }
+}
   
-  .search-bar {
+.search-bar {
     width: 80vw; /* Largeur ajustée */
     height: 40px; /* Hauteur ajustée */
     background-color: #55906C; /* Couleur de fond */
@@ -42,9 +42,9 @@
     align-items: center;
     padding: 0 20px; /* Espace intérieur */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-  }
+}
   
-  .search-input {
+.search-input {
     flex: 1; /* Permet à l'élément de s'étendre pour remplir l'espace disponible */
     height: 100%; /* Ajustement de la hauteur */
     border: none; /* Supprimer les bordures */
@@ -52,74 +52,85 @@
     color: #f2f2f2; /* Couleur du texte */
     font-size: 16px; /* Taille de la police */
     outline: none; /* Supprimer le contour */
-  }
+}
   
-  /* Ajoutez ces lignes si vous souhaitez centrer le texte verticalement dans la barre de recherche */
-  .search-input::placeholder {
+/* Ajoutez ces lignes si vous souhaitez centrer le texte verticalement dans la barre de recherche */
+.search-input::placeholder {
     color: #f2f2f2; /* Couleur du texte de l'espace réservé */
-  }
+}
   
-  .search-input:focus::placeholder {
+.search-input:focus::placeholder {
     color: transparent; /* Masquer l'espace réservé lorsqu'il est en focus */
-  }
+}
   
-  .bottom-section {
+.bottom-section {
     background-color: #f2f2f2; /* Couleur de fond gris pour le rectangle */
     border-radius: 10px;
     padding: 10px;
     width: 85%; 
     margin-bottom: -55px; /* Dépassement négatif pour faire déborder légèrement */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-  }
+}
   
-  .categories {
+.categories {
     text-align: center;
-  }
+}
   
-  .categories h2 {
+.categories h2 {
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #3F7654;
-  }
+}
   
-  .categories h3 {
+.categories h3 {
     font-size: 12px;
     color: #3F7654;
-  }
+}
   
-  .categories ul {
+.categories ul {
     list-style: none;
     padding: 0;
-  }
+}
   
-  .categories li {
+.categories li {
     margin-bottom: 5px;
-  }
+}
   
-  .category-container {
+.category-container {
     display: flex;
     justify-content: space-between;
-  }
+}
   
-  .category {
+.category {
+    text-decoration: none;
     text-align: center;
     flex: 1;
-  }
+}
   
-  .placeholder {
+.placeholder {
     width: 40px; /* Ajustez la taille du placeholder */
     height: 40px; /* Ajustez la taille du placeholder */
     background-color: blue; /* Couleur bleue du placeholder */
     margin: 0 auto; /* Centrer horizontalement */
     margin-bottom: 5px; /* Espace entre les placeholders et les catégories */
     border-radius: 50%;
-  }
+}
   
-  .view-all {
+.view-all {
     margin-top: 10px; 
     font-size: 12px;
     color: #8cbb70;
-  }
-  
+}
+
+/* Nouveau CSS pour enlever le soulignement des liens */
+.category a {
+    text-decoration: none;
+    color: inherit; /* Inherit the color from parent element */
+}
+
+/* Optionnel : Ajoutez un style au hover pour les liens */
+.category a:hover {
+    color: #8cbb70; /* Changez la couleur au hover si nécessaire */
+}
