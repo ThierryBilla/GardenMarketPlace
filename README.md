@@ -1,7 +1,5 @@
 # Gardening Marketplace
 
-![Gardening Marketplace Logo](link_to_your_logo.png)
-
 Welcome to Gardening Marketplace! This project aims to create a mobile-first marketplace for gardening enthusiasts, inspired by platforms like Amazon and Vinted. Users can buy, sell, organize, or participate in gardening-related events through this application.
 
 ## Features
