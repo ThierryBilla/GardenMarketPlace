@@ -12,16 +12,6 @@ Welcome to Gardening Marketplace! This project aims to create a mobile-first mar
 - **Gardening Events**: Discover and join gardening events organized by other users or create your own.
 - **Mobile-First Design**: Designed with a mobile-first approach for optimal user experience on all devices.
 
-## Screenshots
-
-![Home Page](screenshots/home.png)
-*Home Page showcasing popular gardening products.*
-
-![Product Details](screenshots/product_details.png)
-*Product Details Page showing detailed information about a specific product.*
-
-![Event Page](screenshots/events.png)
-*Events Page displaying upcoming gardening events.*
 
 ## Technologies Used
 
